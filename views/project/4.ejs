@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+  <% include partials/template/head.ejs %>
+  <link href="../../stylesheets/project_style/4.css" rel="stylesheet" type="text/css">
+
+	<body>
+
+
+<!--Heading -->
+  <% include partials/template/header.ejs %>
+
+<!-- This is the pic with air bubble -->
+        <div id = "me_bubble">
+            <img src="../../img/project_page/me_bubble.png">
+            <p>This is a Calculator
+			I made using Javascript
+			and CSS. Type in two
+			numbers and try
+			it out.</p>
+        </div>
+
+<!-- Project -->
+			<div id="project">
+<!-- 			<h2>Big Calculator</h2> -->
+			<div id = "outside">
+
+				  <h1>Big Calculator</h1>
+
+				  <form id = "input_boxes">
+				    <input type="text" size=3 id="num1" class = "number" placeholder= "X">
+				    <input type="text" size=3 id="num2" class= "number" placeholder= "Y">
+				  </form>
+
+				  <button id="plus">+</button>
+				  <button id="minus">-</button>
+				  <button id="divide">/</button>
+				  <button id="multiply">x</button>
+
+				<div id="bottom">
+				<p>Answer</p>
+				  <form>
+				  <input type="text" size=5 id="answer">
+				  </form>
+				</div>
+
+				</div>
+			</div>
+
+
+		 <div id="style_content">
+		 	<button id="button">Click to see code!</button>
+
+<!-- !!!!!!!!!!!!! -->
+<!-- This is the hidden content -->
+<!-- !!!!!!!!!!!!! -->
+
+		 	<div id="content">
+		 	<pre class="prettyprint"><code>
+	//click event
+	var click = "click";
+
+	var plus = document.querySelector("#plus");
+	var minus = document.querySelector("#minus");
+	var divide = document.querySelector("#divide");
+	var multiply = document.querySelector("#multiply");
+	var answer = document.querySelector("#answer");
+
+	var plus_answer = function(){
+	  var num1 = parseInt(document.querySelector("#num1").value);
+	  var num2 = parseInt(document.querySelector("#num2").value);
+	  var total = num1 + num2;
+	  answer.value = total;
+	}
+
+	var minus_answer = function(){
+	  var num1 = parseInt(document.querySelector("#num1").value);
+	  var num2 = parseInt(document.querySelector("#num2").value);
+	  var total = num1 - num2;
+	  answer.value = total;
+	}
+
+	var divide_answer = function(){
+	  var num1 = parseInt(document.querySelector("#num1").value);
+	  var num2 = parseInt(document.querySelector("#num2").value);
+	  if(num2 === 0){
+	    alert("Why would you divide by zero?")
+	    answer.value = "You're stupid"
+	  }
+	  else{
+	    var total = num1 / num2;
+	    answer.value = total;
+	  }
+	}
+
+	var multiply_answer = function(){
+	  var num1 = parseInt(document.querySelector("#num1").value);
+	  var num2 = parseInt(document.querySelector("#num2").value);
+	  var total = num1 * num2;
+	  answer.value = total;
+	}
+
+
+	plus.addEventListener(click, plus_answer);
+	minus.addEventListener(click, minus_answer);
+	divide.addEventListener(click, divide_answer);
+	multiply.addEventListener(click, multiply_answer);
+
+		 	</code></pre>
+		 	
+		 	<button id = "button_two">Close Code</button>
+
+		 	</div>
+		 </div>
+		
+
+		 <script src="../../javascripts/project/disappear.js"></script>
+		 <script src="../../javascripts/project/4.js"></script>
+
+
+	<!-- Find Me -->
+	  <% include partials/template/footer.ejs %>
+
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+	</body>
+
+</html>

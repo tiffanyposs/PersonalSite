@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+  <% include partials/template/head.ejs %>
+
+	<body>
+
+
+<!--Heading -->
+  <% include partials/template/header.ejs %>
+
+
+<!-- This is the pic with air bubble -->
+        <div id = "me_bubble">
+            <img src="../../img/project_page/me_bubble.png">
+            <p>Hi! The image here
+            links to an About Me page
+            Generator. It’s very basic,
+            but I was practicing DOM
+            manipulation,
+            CSS, and Javascript.</p>
+        </div>
+
+
+<!-- Project -->
+		<div id="project">
+<!-- 			<h2>About Me Generator</h2> -->
+			<a href="1/about_me" target="blank"><img src="../../img/project_page/about_img.png" id ="project_img"></a>
+		</div>
+
+
+		 <div id="style_content">
+		 	<button id="button">Click to see code!</button>
+
+<!-- !!!!!!!!!!!!! -->
+<!-- This is the hidden content -->
+<!-- !!!!!!!!!!!!! -->
+
+		 	<div id="content">
+		 	<pre class="prettyprint"><code>
+  var body = document.querySelector("body");
+  body.id = "body_page1";
+
+  var header = document.createElement("header");
+  header.id = "header_1";
+  body.appendChild(header);
+
+
+  var h2 = document.createElement("h2");
+  h2.id = "h2_page1"
+  h2.innerText = "About me Generator!";
+  header.appendChild(h2);
+
+  var div = document.createElement("div");
+  div.id = "div_page1";
+  body.appendChild(div);
+
+
+var Textbox = function(string){
+  var input = document.createElement("input");
+  input.type = "text";
+  input.placeholder = string;
+  div.appendChild(input);
+  return input;
+}
+
+  var input1 = Textbox("Your Name");
+  var input2 = Textbox("Sign");
+  var input3 = Textbox("Hometown");
+  var input4 = Textbox("Favorite CSS Color");
+
+  var button = document.createElement("button");
+  button.id = "button"
+  button.innerText = "Make New Page";
+  div.appendChild(button);
+
+    var newPage = function(){
+
+      var user_name = input1.value;
+      var user_sign = input2.value;
+      var user_hometown = input3.value;
+      var user_color = input4.value;
+
+      body.id = "body_page2"
+      body.style.backgroundColor = user_color;
+
+      body.removeChild(div);
+      body.removeChild(header);
+
+      var header2 = document.createElement("header");
+      header2.id = "header2";
+      body.appendChild(header2);
+
+      var h1 = document.createElement("h1");
+      h1.id = "h1_page2";
+      h1.innerText = "All About " + user_name;
+      h1.style.color = user_color;
+      header2.appendChild(h1);
+
+      var div_out = document.createElement("div");
+      div_out.id = "master_div";
+      body.appendChild(div_out);
+
+      var div_left = document.createElement("div");
+      div_left.id = "left_div";
+      div_left.style.borderColor = user_color;
+      div_out.appendChild(div_left);
+
+      var div_right = document.createElement("div");
+      div_right.id = "right_div";
+      div_right.style.borderColor = user_color;
+      div_out.appendChild(div_right);
+
+      var p1 = document.createElement("p");
+      p1.innerText = user_name 
+      + "'s star sign is " 
+      + user_sign + ".";
+      div_left.appendChild(p1);
+
+      var p2 = document.createElement("p");
+      p2.innerText = user_name 
+      + " is from " 
+      + user_hometown + ".";
+      div_right.appendChild(p2);
+
+      var footer = document.createElement("footer");
+      footer.innerText = "Favorite CSS color: " + user_color;
+      footer.style.color = user_color;
+      body.appendChild(footer);
+    }
+
+    button.addEventListener("click", newPage);
+    input4.addEventListener("keypress", function(){
+      if(event.keyCode === 13){
+        button.click();
+      }
+    });
+		 	</code></pre>
+		 	
+		 	<button id = "button_two">Close Code</button>
+
+		 	</div>
+		 </div>
+		
+
+		 <script src="../../javascripts/project/disappear.js"></script>
+
+
+<!-- Find Me -->
+  <% include partials/template/footer.ejs %>
+  
+
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+	</body>
+
+</html>
