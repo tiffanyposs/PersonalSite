@@ -34,4 +34,4 @@ app.get('/project/:id1/:id2', function(req, res){
 	res.render("project/" + path + "/" + file)
 })
 
-app.listen(3000)
+app.listen(80)
