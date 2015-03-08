@@ -9,9 +9,10 @@
 font-family: 'Droid Sans', sans-serif;
 font-family: 'Slabo 13px', serif;
  */
-
+ 
 body{
 	margin: 0 auto;
+	font-family: 'Droid Sans', sans-serif;
 }
 
 /*heading*/
@@ -69,9 +70,56 @@ body{
 }
 
 
+/*about page*/
+#self_info{
+	height: 700px;
+	/*background-color: pink;*/
+	/*text-align: center;*/
+}
+
+#self_info div h2{
+	font-size: 30px;
+}
+
+#self_info div{
+	width: 30%;
+	margin-left: 5%;
+	margin-top: 170px;
+	float: left;
+	background-color: rgb(72, 207, 174);
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+
+#self_info img{
+	/*border: 5px solid rgb(72, 207, 174);*/
+	/*border-radius: 10px;*/
+	margin-left: 20%;
+	margin-top: 50px;
+	height: 500px;
+	float: left;
+}
+
+
+#question_container{
+	width: 60%;
+	margin-left: 20%;
+	/*border: 2px solid black;*/
+	/*padding: 4%;*/
+}
+
+#question_container h3{
+	color: rgb(235, 122, 139);
+	font-size: 30px
+}
+
+#question_container div h4{
+	color: rgb(72, 207, 174);
+}
+
 /*Find me section*/
-
-
 #find_me{
 	width: 100%;
 	margin-top: 100px;

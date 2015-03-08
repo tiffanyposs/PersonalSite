@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Slabo+13px' rel='stylesheet' type='text/css'>
+		<link href="stylesheets/stylesheet3.css" rel="stylesheet" type="text/css">
+
+		<meta charset="UTF-8">
+		<meta name="description" content="Tiffany Poss Portfolio Website">
+		<meta name="keywords" content="HTML,CSS, CSS3, Ruby, JavaScript, Node,
+		Web Design, Design, Portfolio, Junior Developer, Tiffany Poss">
+		<meta name="author" content="Tiffany Poss">
+
+		<title>Tiffany Poss</title>
+	</head>
+
+	<body>
+
+<!--Heading -->
+	<% include partials/template/header.ejs %>
+
+		<div class = "project_header">
+			<h3>Featured Project</h3>
+		</div>
+
+
+		<div id = "final_project_container">
+			<div id = "final_project">
+				<div id = "final_project_text">
+					<h3>Splittr</h3>
+					<p>Splittr is a site I developed to fix a problem I always have while dining out. Whenever I would go out with my friends for dinner,  it would take 30 minutes to figure out who owed what on the bill, and itemizing never seemed to add up correctly.</p>
+
+					<p>For this site, the user is able to pull menu items from the restaurant they are eating at. When their check comes, they are able to select the items that the table orders and select their friends and separate who had what and who split what. After that, the tax and tip is calculated for each person so there is no confusion on who owes what!</p>
+
+					<p>Moving forward, I’d like to continue work on this project adding features and converting it to a mobile app.</p>
+
+
+				</div>		
+				<div id = "final_project_img">
+					<a href = "http://tiffany.princesspeach.nyc/" target = "blank"><img src = "../../img/project_img/other/final_project.png"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class = "project_header">
+			<h3>Other Projects</h3>
+		</div>
+
+	<!-- Projects -->
+		<div id="project">
+			<div class="prac_group">
+				<!-- tree project -->
+				<a href="project/3"><div class="practice" id="prac1"></div></a>
+				<!-- ball project -->
+				<a href="project/2"><div class="practice" id="prac2"></div></a>
+				<a href="project/4"><div class="practice" id="prac3"></div></a>
+			</div>
+			<div class="prac_group">
+				<!-- about project -->
+				<a href="project/1"><div class="practice" id="prac4"></div></a>
+				<!-- book project -->
+				<a href="project/5"><div class="practice" id="prac5"></div></a>
+				<!-- chat app -->
+				<a href="project/6"><div class="practice" id="prac6"></div></a>
+			</div>
+			<div id="color_proj"></div>
+		</div>
+
+
+
+
+	<% include partials/template/footer.ejs %>
+
+
+	</body>
+
+</html>

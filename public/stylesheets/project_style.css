@@ -13,6 +13,7 @@ font-family: 'Slabo 13px', serif;
 body{
 	margin: 0 auto;
 	min-width: 1400px;
+	font-family: 'Droid Sans', sans-serif;
 }
 
 /*heading*/
@@ -107,11 +108,33 @@ body{
 }
 
 #button{
-
+	margin: 0px 100px 0px 100px;
+	background-color: rgb(72, 207, 174);
+	color: white;
+	font-size: 15px;
+	padding: 10px;
+	/*border-radius: 10px;*/
+	outline: 0;
+	border: 0;
 }
 
 #button_two{
 
+}
+
+.next_button{
+	background-color: white;
+	color: rgb(101, 109, 120);
+	font-size: 20px;
+	width: 40px;
+	border-radius: 10px;
+	outline: 0;
+	border: 0;
+}
+
+.next_button:focus {
+outline: 0;
+box-shadow: none;
 }
 
 #style_content{

@@ -30,7 +30,9 @@
 
 
 		 <div id="style_content">
+      <a href = "/project/4"><button class = "next_button">&lt</button></a>
 		 	<button id="button">Click to see code!</button>
+      <a href = "/project/5"><button class = "next_button">&gt</button></a>
 
 <!-- !!!!!!!!!!!!! -->
 <!-- This is the hidden content -->
@@ -38,103 +40,103 @@
 
 		 	<div id="content">
 		 	<pre class="prettyprint"><code>
-  var body = document.querySelector("body");
-  body.id = "body_page1";
+    var body = document.querySelector("body");
+    body.id = "body_page1";
 
-  var header = document.createElement("header");
-  header.id = "header_1";
-  body.appendChild(header);
-
-
-  var h2 = document.createElement("h2");
-  h2.id = "h2_page1"
-  h2.innerText = "About me Generator!";
-  header.appendChild(h2);
-
-  var div = document.createElement("div");
-  div.id = "div_page1";
-  body.appendChild(div);
+    var header = document.createElement("header");
+    header.id = "header_1";
+    body.appendChild(header);
 
 
-var Textbox = function(string){
-  var input = document.createElement("input");
-  input.type = "text";
-  input.placeholder = string;
-  div.appendChild(input);
-  return input;
-}
+    var h2 = document.createElement("h2");
+    h2.id = "h2_page1"
+    h2.innerText = "About me Generator!";
+    header.appendChild(h2);
 
-  var input1 = Textbox("Your Name");
-  var input2 = Textbox("Sign");
-  var input3 = Textbox("Hometown");
-  var input4 = Textbox("Favorite CSS Color");
+    var div = document.createElement("div");
+    div.id = "div_page1";
+    body.appendChild(div);
 
-  var button = document.createElement("button");
-  button.id = "button"
-  button.innerText = "Make New Page";
-  div.appendChild(button);
 
-    var newPage = function(){
+  var Textbox = function(string){
+    var input = document.createElement("input");
+    input.type = "text";
+    input.placeholder = string;
+    div.appendChild(input);
+    return input;
+  }
 
-      var user_name = input1.value;
-      var user_sign = input2.value;
-      var user_hometown = input3.value;
-      var user_color = input4.value;
+    var input1 = Textbox("Your Name");
+    var input2 = Textbox("Sign");
+    var input3 = Textbox("Hometown");
+    var input4 = Textbox("Favorite CSS Color");
 
-      body.id = "body_page2"
-      body.style.backgroundColor = user_color;
+    var button = document.createElement("button");
+    button.id = "button"
+    button.innerText = "Make New Page";
+    div.appendChild(button);
 
-      body.removeChild(div);
-      body.removeChild(header);
+      var newPage = function(){
 
-      var header2 = document.createElement("header");
-      header2.id = "header2";
-      body.appendChild(header2);
+        var user_name = input1.value;
+        var user_sign = input2.value;
+        var user_hometown = input3.value;
+        var user_color = input4.value;
 
-      var h1 = document.createElement("h1");
-      h1.id = "h1_page2";
-      h1.innerText = "All About " + user_name;
-      h1.style.color = user_color;
-      header2.appendChild(h1);
+        body.id = "body_page2"
+        body.style.backgroundColor = user_color;
 
-      var div_out = document.createElement("div");
-      div_out.id = "master_div";
-      body.appendChild(div_out);
+        body.removeChild(div);
+        body.removeChild(header);
 
-      var div_left = document.createElement("div");
-      div_left.id = "left_div";
-      div_left.style.borderColor = user_color;
-      div_out.appendChild(div_left);
+        var header2 = document.createElement("header");
+        header2.id = "header2";
+        body.appendChild(header2);
 
-      var div_right = document.createElement("div");
-      div_right.id = "right_div";
-      div_right.style.borderColor = user_color;
-      div_out.appendChild(div_right);
+        var h1 = document.createElement("h1");
+        h1.id = "h1_page2";
+        h1.innerText = "All About " + user_name;
+        h1.style.color = user_color;
+        header2.appendChild(h1);
 
-      var p1 = document.createElement("p");
-      p1.innerText = user_name 
-      + "'s star sign is " 
-      + user_sign + ".";
-      div_left.appendChild(p1);
+        var div_out = document.createElement("div");
+        div_out.id = "master_div";
+        body.appendChild(div_out);
 
-      var p2 = document.createElement("p");
-      p2.innerText = user_name 
-      + " is from " 
-      + user_hometown + ".";
-      div_right.appendChild(p2);
+        var div_left = document.createElement("div");
+        div_left.id = "left_div";
+        div_left.style.borderColor = user_color;
+        div_out.appendChild(div_left);
 
-      var footer = document.createElement("footer");
-      footer.innerText = "Favorite CSS color: " + user_color;
-      footer.style.color = user_color;
-      body.appendChild(footer);
-    }
+        var div_right = document.createElement("div");
+        div_right.id = "right_div";
+        div_right.style.borderColor = user_color;
+        div_out.appendChild(div_right);
 
-    button.addEventListener("click", newPage);
-    input4.addEventListener("keypress", function(){
-      if(event.keyCode === 13){
-        button.click();
+        var p1 = document.createElement("p");
+        p1.innerText = user_name 
+        + "'s star sign is " 
+        + user_sign + ".";
+        div_left.appendChild(p1);
+
+        var p2 = document.createElement("p");
+        p2.innerText = user_name 
+        + " is from " 
+        + user_hometown + ".";
+        div_right.appendChild(p2);
+
+        var footer = document.createElement("footer");
+        footer.innerText = "Favorite CSS color: " + user_color;
+        footer.style.color = user_color;
+        body.appendChild(footer);
       }
-    });
+
+      button.addEventListener("click", newPage);
+      input4.addEventListener("keypress", function(){
+        if(event.keyCode === 13){
+          button.click();
+        }
+      });
 		 	</code></pre>
 		 	
 		 	<button id = "button_two">Close Code</button>

@@ -13,6 +13,7 @@ font-family: 'Slabo 13px', serif;
 body{
 	margin: 0 auto;
 	min-width: 1400px;
+	font-family: 'Droid Sans', sans-serif;
 }
 
 /*heading*/
@@ -56,183 +57,62 @@ body{
 	color: rgb(67, 74, 84);
 }
 
-/*main image*/
 
-#main_img{
+/*Project Header*/
+.project_header{
 	width: 100%;
-	height: 850px;
-	background-color: rgb(222, 69, 84);
-	margin-top: -55px;
+	height: 50px;
+	text-align: center;
 }
 
-#main_img img{
-	height: 500px;
-	float: left;
-	margin-left: 150px;
-	margin-top: 200px;
-}
-
-#main_text{
-/*	position: absolute;*/
-	display: inline-block;
-	margin-left: 100px;
-	margin-top: 200px;
-}
-
-#main_text h1{
-	color: white;
-	font-size: 4.5em;
-/*	font-family: 'Droid Sans', sans-serif;*/
-	font-family: 'Slabo 13px', serif;
-}
-
-
-/*hi section*/
-
-#hi_main{
-	position: relative;
-	margin-bottom: 8%;
-}
-
-#grey_box{
-	width: 100%;
-	height: 220px;
-	background-color: rgb(67, 74, 84);
-	margin-top: -1%;
-}
-
-#img_div{
-	margin-top: -5%;
-	margin-left: 20%;
-	position: relative;
-}
-
-#img_div img{
-	margin-right: 2%;
-}
-
-
-#p_div{
-	background-color: rgb(101, 109, 120);
-	width: 30%;
-	min-width: 200px;
-	margin-top: -200px;
-	margin-left: 50%;
-	position: relative;
-	
-}
-
-#p_div p{
-	color: white;
-	padding: 5%;
-	font-size: 1.2em;
-	font-family: 'Droid Sans', sans-serif;
-	line-height: 1.4em;
-}
-
-
-/*Design and Development*/
-
-
-#dev_container{
-	height: 300px;
-	color: white;
-}
-
-#dev{
-	background-color: rgb(170, 178, 189);
-	width: 60%;
-	text-align: right;
-	float: left;
-	height: 350px;
-	font-family: 'Droid Sans', sans-serif;
-}
-
-#design{
-	background-color: rgb(72, 207, 174);
-	width: 40%;
-	float: right;
-	height: 350px;
-	font-family: 'Slabo 13px', serif;
-}
-
-#dev p{
-	padding: 0 5% 0 20%;
-	font-size: 1.2em;
-}
-
-#design p{
-	padding: 0 20% 0 7%;
-	font-size: 1.2em;
-}
-
-#dev img{
-	position: absolute;
-	margin-left: -30px;
-	margin-top: -120px;
-}
-
-#dev h2{
-	padding-right: 40px;
-	font-size: 3em;
-}
-
-#design h2{
-	padding-left: 35px;
-	font-size: 3em;
-}
-
-/*Skills*/
-
-
-#skill_head{
-	width: 100%;
-	height: 200px;
-	background-color: rgb(67, 74, 84);
-}
-
-#skill_head h2{
+.project_header h3{
 	color: rgb(72, 207, 174);
+	font-size: 50px;
+}
+
+
+
+/*Final Project*/
+
+#final_project_container{
+	margin: 0 auto;
 	text-align: center;
-	font-family: 'Droid Sans', sans-serif;
-	font-size: 3em;
-	padding-top: 65px;
-
+	height: 500px;
+	/*border: 2px solid red;*/
 }
 
-#skill_img{
-	background-color: rgb(101, 109, 120);
-	margin-top: -2%;
-	text-align: center;
-	padding: 70px 0 70px 0;
+#final_project{
+	margin-top: 70px;
 }
 
-.skill_badge{
-	margin-bottom: 40px;
-}
-
-.skill_badge img{
-	margin: 15px;
-}
-
-#p_skill{
-	position: absolute;
-	font-family: 'Slabo 13px', serif;
-	font-size: 2em;
-	color: white;
+#final_project_text{
+	margin-top: 0px;
 	margin-left: 10%;
+	width: 35%;
+	/*border: 2px solid red;*/
 	float: left;
-	margin-top: 40px;
 }
 
-.skill{
-	margin-bottom: 170px;
-	text-align: right;
+#final_project_text h3{
+	color: rgb(72, 207, 174);
+	font-size: 30px;
 }
-.skill span{
-	padding-bottom: 2px;
-	border-bottom: 3px solid white;
+
+#final_project_text p{
+	color: rgb(67, 74, 84);
 }
+
+#final_project_img{
+	width: 43%;
+	margin-left: 5%;
+	float: left;
+}
+
+#final_project_img img{
+	width: 100%;
+	border: 7px solid rgb(67, 74, 84);
+}
+
 
 
 
@@ -240,10 +120,14 @@ body{
 /*I put a min width of 1400px for this section, might go 
 back to put on everything*/
 
+
+
 #project{
 	margin: 0 auto;
+	margin-top: 50px;
 	text-align: center;
-	height: 1100px;
+	height: 950px;
+	/*border: 2px solid red;*/
 }
 
 #project h2{
@@ -254,10 +138,6 @@ back to put on everything*/
 
 }
 
-#project a {
-	text-decoration: none;
-}
-
 #color_proj{
 	width: 100%;
 	height: 400px;
@@ -266,7 +146,7 @@ back to put on everything*/
 }
 
 .prac_group{
-
+	margin-top: 15px;
 }
 
 .practice{
@@ -330,126 +210,10 @@ back to put on everything*/
 
 
 
-/*Schools*/
-
-#school_main{
-/*	margin-bottom: 600px;*/
-}
-
-#school_grey{
-	width: 100%;
-	height: 400px;
-	background-color: rgb(67, 74, 84);
-	/*position: absolute;*/
-}
-
-#school_head{
-	width: 400px;
-	height: 400px;
-	background-color: rgb(72, 207, 174);
-	margin-left: 135px;
-	float: left;
-
-}
-
-#school_header{
-	margin-top: 50px;
-}
-
-#school_head h3{
-	color: white;
-	font-size: 5em;
-	text-align: right;
-	font-family: 'Droid Sans', sans-serif;
-	margin: 20px;
-}
-
-
-
-#schools_img{
-	float: left;
-	margin-left: 50px;
-	margin-top: 30px;
-}
-
-#schools_img img{
-	margin: 20px;
-
-}
-
-#schools_text{
-	font-family: 'Slabo 13px', serif;
-	display: inline-block;
-	color: white;
-	margin-left: 50px;
-	width: 600px;
-	height: 400px;
-}
-
-#ga_text{
-	margin-top: 50px;
-}
-#fit_text{
-	margin-top: 90px;
-}
-
-#schools_text h4{
-	font-size: 2em;
-	margin-bottom: -10px;
-}
-
-#schools_text p{
-	font-size: 1.2em;
-	margin-bottom: -15px;
-}
-
-#italy{
-	width: 100%;
-	height: 200px;
-/*	position: absolute;*/
-	background-color: rgb(101, 109, 120);
-		font-family: 'Slabo 13px', serif;
-}
-
-#italy_header{
-	float: left;
-	font-size: 2.5em;
-	color: white;
-	margin-left: 165px;
-
-}
-
-#italy_header h3{
-	margin-top: 70px;
-}
-
-#italy_content{
-	margin-left: 50px;
-	color: white;
-	display: inline-block;
-}
-
-#italy_content h4{
-	font-size: 2em;
-	margin-bottom: -10px;
-}
-
-#italy_content p{
-	font-size: 1.2em;
-}
-
-#italy_content span{
-	border-bottom: 5px solid white;
-}
-
-
-
 /*Find me section*/
-
-
 #find_me{
 	width: 100%;
-	margin-top: 300px;
+	margin-top: 200px;
 	position: relative;
 }
 
